@@ -92,7 +92,7 @@ class WeatherApp extends StatelessWidget {
                 },
               );
             } else {
-              return Text('Error');
+              return const Text('Error');
             }
           },
         ),

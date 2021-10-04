@@ -17,7 +17,7 @@ class LastUpdateWidget extends StatelessWidget {
         return Text(
           'Last update: ' +
               TimeOfDay.fromDateTime(responseDate).format(context),
-          style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
         );
       },
     );

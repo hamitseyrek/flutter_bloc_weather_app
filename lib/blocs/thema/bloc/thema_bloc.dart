@@ -17,16 +17,12 @@ class ThemaBloc extends Bloc<ThemaEvent, ThemaState> {
   Stream<ThemaState> mapEventToState(ThemaEvent event) async* {
     ThemaAppState? themaAppState;
     if (event is ChangeThema) {
-      print(event.weatherStateAbbr);
-
       switch (event.weatherStateAbbr) {
         case 'sn':
         case 'sl':
         case 'h':
         case 't':
         case 'hc':
-          print(124443);
-
           themaAppState = ThemaAppState(
               themeData: ThemeData(primaryColor: Colors.green),
               materialColor: Colors.grey);
@@ -35,8 +31,6 @@ class ThemaBloc extends Bloc<ThemaEvent, ThemaState> {
         case 'hr':
         case 'lr':
         case 's':
-          print(1255553);
-
           themaAppState = ThemaAppState(
               themeData: ThemeData(primaryColor: Colors.indigoAccent),
               materialColor: Colors.indigo);
@@ -44,8 +38,6 @@ class ThemaBloc extends Bloc<ThemaEvent, ThemaState> {
           break;
         case 'lc':
         case 'c':
-          print(126663);
-
           themaAppState = ThemaAppState(
               themeData: ThemeData(primaryColor: Colors.yellow),
               materialColor: Colors.orange);

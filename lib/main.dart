@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
     return BlocBuilder<ThemaBloc, ThemaState>(
       bloc: BlocProvider.of<ThemaBloc>(context),
       builder: (context, ThemaState state) {
-        print((state as ThemaAppState).themeData.primaryColor);
+        (state as ThemaAppState).themeData.primaryColor;
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Weather App',
-          theme: (state as ThemaAppState).themeData,
+          theme: (state).themeData,
           home: BlocProvider<WeatherBloc>(
             create: (context) => WeatherBloc(WeatherRepository()),
             child: WeatherApp(),

@@ -13,7 +13,7 @@ class _SelectCityWidgetState extends State<SelectCityWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Select City'),
+        title: const Text('Select City'),
       ),
       body: Form(
           child: Row(
@@ -35,7 +35,7 @@ class _SelectCityWidgetState extends State<SelectCityWidget> {
               onPressed: () {
                 Navigator.pop(context, _textController.text);
               },
-              icon: Icon(Icons.search))
+              icon: const Icon(Icons.search))
         ],
       )),
     );

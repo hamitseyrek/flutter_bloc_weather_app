@@ -15,11 +15,8 @@ class WeatherImageWidget extends StatelessWidget {
             .weatherModel
             .consolidatedWeather[0]
             .weatherStateAbbr;
-        var responseTemp = (state as WeatherLoadedState)
-            .weatherModel
-            .consolidatedWeather[0]
-            .theTemp
-            .floor();
+        var responseTemp =
+            (state).weatherModel.consolidatedWeather[0].theTemp.floor();
         return Column(
           children: [
             Text(

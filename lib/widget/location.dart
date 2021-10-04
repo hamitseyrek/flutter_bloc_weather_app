@@ -9,7 +9,7 @@ class LocationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       selectedCity,
-      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
     );
   }
 }
